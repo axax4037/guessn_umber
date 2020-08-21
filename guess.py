@@ -10,7 +10,7 @@ while True:
     if x == c:
         print("恭喜你答對了")
         print("THE NUMBER IS ", x)
-        print("你已經猜了", y,"次")
+        print("你猜了", y,"次")
         break
     elif c > x:
         print("你的數字比答案大")
