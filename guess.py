@@ -3,6 +3,7 @@ print("猜數字遊戲，請輸入數字範圍 A~B ")
 a = int(input("請輸入起始數字 A : "))
 b = int(input("請輸入結尾數字 B : ")) 
 x = random.randint(a, b)
+y = 0
 print("猜數字遊戲,遊戲開始")
 while True:
     c = int(input("你猜的數字： "))
@@ -13,4 +14,6 @@ while True:
     else:
         if x != c:
             print("猜錯了，再試一次")
+            y = y + 1
+            print("你已經猜了", y,"次")
         
